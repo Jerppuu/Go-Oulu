@@ -1,2 +1,2 @@
-# Go-Oulu
-Projektitoiminnan perusteet
+# Go@Oulu
+Projektitoiminnan perusteet kurssin lähdekoodi
