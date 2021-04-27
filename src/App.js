@@ -1,23 +1,18 @@
-import './App.css';
+import React, {} from 'react';
+import Start from "./Start";
+import Login from "./Login";
+import Register from "./Register";
+import Map from "./Map";
+import Places from "./Places";
 
-function App() {
-  return (
-      <div>
-
-          <div className="grid">
-              <div className="logo">
-                  Go Oulu
-              </div>
-
-              <div className="buttons">
-                  <button> Rekisteröidy </button>
-                  <button> Kirjaudu </button>
-                  <button> Jatka kirjautumatta</button>
-              </div>
-          </div>
-
-      </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <Register/>
+            </div>
+        );
+    }
 }
 
 export default App;
