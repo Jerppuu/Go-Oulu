@@ -4,8 +4,9 @@ class Login extends Component {
     render() {
         return (
                 <div className="loginRegisterGrid">
+
                     <header>
-                        Go@Oulu
+                        Logo
                     </header>
 
                     <div className="loginInput">
@@ -17,6 +18,9 @@ class Login extends Component {
                         <button className="button">Kirjaudu</button>
                         <button className="button">Takaisin</button>
 
+
+                    </div>
+                    <div className="footer">
 
                     </div>
 
