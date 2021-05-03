@@ -1,9 +1,10 @@
 .startGrid{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr 6fr auto 0.5fr;
+    grid-template-rows: 0.5fr 5fr 5fr 5fr 1fr auto 0.5fr;
     justify-content: center;
     text-align: center;
+    background-color: #64FB73;
 }
 
 .loginRegisterGrid {

@@ -9,7 +9,7 @@ class Start extends Component {
                 </header>
 
                 <div className="startButtons">
-                    <button className="button">Rekisteröidy</button>
+                    <button className="button">Rekisteröidy?</button>
                     <button className="button">Kirjaudu</button>
                     <button className="button">Jatka kirjautumatta</button>
 
