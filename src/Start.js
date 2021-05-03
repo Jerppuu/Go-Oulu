@@ -1,24 +1,22 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Start extends Component {
-    render() {
-        return (
-            <div className="startGrid">
-                <header>
-                    Go@Oulu
-                </header>
+function Start(props) {
+    return (
+        <div className="startGrid">
+            <header>
+                Go@Oulu
+            </header>
 
-                <div className="startButtons">
-                    <button className="button">Rekisteröidy</button>
-                    <button className="button">Kirjaudu</button>
-                    <button className="button">Jatka kirjautumatta</button>
+            <div className="startButtons">
+                <button onClick={()=> props.switchView("Register")} className="button">Rekisteröidy</button>
+                <button onClick={()=> props.switchView("Login")} className="button">Kirjaudu</button>
+                <button onClick={()=> props.switchView("Map")} className="button">Jatka kirjautumatta</button>
 
-
-                </div>
 
             </div>
+
+        </div>
         );
-    }
 }
 
 export default Start;
