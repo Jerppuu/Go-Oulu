@@ -1,29 +1,26 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Login extends Component {
-    render() {
-        return (
-                <div className="loginRegisterGrid">
-                    <header>
-                        Go@Oulu
-                    </header>
+function Login(props) {
+    return (
+        <div className="loginRegisterGrid">
+            <header>
+                Go@Oulu
+            </header>
 
-                    <div className="loginInput">
-                        <input type="text" name="username" placeholder="Käyttäjätunnus"/>
-                        <input type="text" name="Password" placeholder="Salasana"/>
-                    </div>
+            <div className="loginInput">
+                <input type="text" name="username" placeholder="Käyttäjätunnus"/>
+                <input type="text" name="Password" placeholder="Salasana"/>
+            </div>
 
-                    <div className="loginRegisterButtons">
-                        <button className="button">Kirjaudu</button>
-                        <button className="button">Takaisin</button>
+            <div className="loginRegisterButtons">
+                <button className="button" disabled={true}>Kirjaudu</button>
+                <button onClick={()=> props.switchView("Start")}  className="button">Takaisin</button>
 
 
-                    </div>
+            </div>
 
-                </div>
-
-        );
-    }
+        </div>
+    );
 }
 
 export default Login;

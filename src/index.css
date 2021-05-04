@@ -1,3 +1,5 @@
+
+
 .startGrid{
     display: grid;
     grid-template-columns: auto;
@@ -46,6 +48,11 @@ header{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
+}
+
+.loginRegisterButtons:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .button{
@@ -104,6 +111,16 @@ header{
     background-color: green;
     color: white;
     margin-bottom: 10px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    font-size: x-large;
 }
 
 .footer {
