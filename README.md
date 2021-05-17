@@ -1,4 +1,5 @@
-#Go-Oulu
+# Go-Oulu
+
 This app is part of "Projektitoiminnnan perusteet" course
 
 Adding Google maps api key:
