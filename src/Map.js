@@ -23,9 +23,11 @@ function Map(props) {
         mapRef.current = map;
     }, [])
 
+    //TODO: Add all places and descriptions for them
     const markers = [
-        {lat: 65.012804, lng: 25.466924, name: "Kauppuri 5"},
-        {lat: 65.010717, lng: 25.469784, name: "45 Special"},
+        {lat: 65.012804, lng: 25.466924, name: "Kauppuri 5", description:"expample description", openingHours: "10:00-12:00"},
+        {lat: 65.010717, lng: 25.469784, name: "45 Special", description:"expample description", openingHours: "10:00-12:00"},
+        {lat: 65.013280, lng: 25.464708, name: "Toripoliisi", description:"expample description", openingHours: "10:00-12:00"},
     ];
 
     const [selected, setSelected] = useState(null);
@@ -62,8 +64,9 @@ function Map(props) {
                     //Todo: add more information about places
                     {selected ? (<InfoWindow position={{lat: selected.lat, lng: selected.lng}} onCloseClick={() => {setSelected(null)}}>
                         <div>
-                            <h2>Kohteen nimi</h2>
-                            <p>{selected.name}</p>
+                            <h2>{selected.name}</h2>
+                            <p>{selected.description}</p>
+                            <p>{selected.openingHours}</p>
                         </div>
                     </InfoWindow>) : null}
 
