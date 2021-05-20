@@ -131,3 +131,17 @@ header{
     color: white;
     text-align: center;
 }
+
+.locateMe{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    z-index: 10;
+}
+
+.locateMe img {
+    width: 50px;
+    cursor: pointer;
+}

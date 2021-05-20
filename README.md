@@ -9,3 +9,6 @@ Adding Google maps api key:
 2. Add following line to the file: REACT_APP_GOOGLE_MAPS_API_KEY="YourApiKeyHere"
 3. Inset your api key inside the quotes
    
+
+Credit for icon goes to IconMarket
+https://www.iconfinder.com/iconsets/navigation-98
