@@ -1,16 +1,24 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
+
 
 function Places(props) {
+    const dropdownRef = useRef(null);
+    const [isActive, setIsActive] = useState(false);
+    const onClick = () => setIsActive(!isActive);
+
     return(
-        <div>
-
-            <div className="placeList">
-                <div className="place"> Kauppuri5 </div>
-                <div className="place"> Ainolanpuisto </div>
-                <div className="place"> Yliopisto</div>
-                <div className="place"> 45 Special</div>
-            </div>
-
+        <div className="menu-container">
+            <button onClick={onClick} className="menu-trigger">
+                <span>Käydyt kohteet</span>
+            </button>
+            <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
+                <ul>
+                    <li><a href="/Kauppuri5">Kauppuri5</a></li>
+                    <li><a href="/Ainolanpuisto">Ainolanpuisto</a></li>
+                    <li><a href="/Yliopisto">Yliopisto</a></li>
+                    <li><a href="/45 special">45 special</a></li>
+                </ul>
+            </nav>
             <div className="footer">
                 <div className="footerGrid">
                     <button onClick={()=> props.switchView("Places")}   className="footerButton">Paikat</button>
@@ -22,5 +30,6 @@ function Places(props) {
     )
     ;
 }
+
 
 export default Places;
