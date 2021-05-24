@@ -87,7 +87,7 @@ function Map({switchView, markers, setMarkers}) {
                     {selected ? (<InfoWindow position={{lat: selected.lat, lng: selected.lng}} onCloseClick={() => {setSelected(null)}}>
                         <div>
                             <h2>{selected.name}</h2>
-                            <h3>Avoinna: {selected.openingHours}</h3>
+                            <h4>Avoinna: {selected.openingHours}</h4>
                             <p>{selected.description}</p>
                         </div>
                     </InfoWindow>) : null}

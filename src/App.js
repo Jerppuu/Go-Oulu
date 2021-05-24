@@ -58,27 +58,27 @@ function App() {
             <div>
 
                 <div hidden={view !== "Start"}>
-                    <Start switchView = {switchView}/>
+                    <Start switchView={switchView}/>
                 </div>
 
                 <div hidden={view !== "Register"}>
-                    <Register switchView = {switchView}/>
+                    <Register switchView={switchView}/>
                 </div>
 
                 <div hidden={view !== "Login"}>
-                    <Login switchView = {switchView}/>
+                    <Login switchView={switchView}/>
                 </div>
 
                 <div hidden={view !== "Map"}>
-                    <Map switchView = {switchView} markers={markers} setMarkers={setMarkers}/>
+                    <Map switchView={switchView} markers={markers} setMarkers={setMarkers}/>
                 </div>
 
                 <div hidden={view !== "Places"}>
-                    <Places switchView = {switchView} markers={markers}/>
+                    <Places switchView={switchView} markers={markers}/>
                 </div>
 
                 <div hidden={view !== "Profile"}>
-                    <Profile switchView = {switchView}/>
+                    <Profile switchView={switchView} markers={markers}/>
                 </div>
             </div>
 

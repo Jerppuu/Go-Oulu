@@ -20,7 +20,7 @@ function Places({switchView ,markers}) {
 
 
     const table = markers;
-    const place = ["Not yet visited","Not yet visited","Not yet visited"];
+    const place = ["Paikka käymättä","Paikka käymättä","Paikka käymättä","Paikka käymättä","Paikka käymättä","Paikka käymättä",];
     for (let i = 0; i < markers.length; i++) {
         if (table[i].isVisited === true) {
             place[i] = table[i].name
@@ -28,10 +28,17 @@ function Places({switchView ,markers}) {
     }
         return (
         <div>
-            <div className="placeList">
+            <div>
                 <div className="place">{place[0]}</div>
                 <div className="place">{place[1]}</div>
                 <div className="place">{place[2]}</div>
+                <div className="place">{place[3]}</div>
+                <div className="place">{place[4]}</div>
+                <div className="place">{place[5]}</div>
+            </div>
+            <div className="info">
+                <div style={{margin: "20px"}}>Vieraile paikoissa avataksesi ne</div>
+                <div>Paikka avautuu, kun paikannat itsesi kartta osiossa ollessasi tarkpeeksi lähellä kohdetta.</div>
             </div>
 
             <div className="footer">

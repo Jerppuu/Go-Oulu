@@ -1,4 +1,6 @@
-
+*{
+    font-family: "Andale Mono";
+}
 
 .startGrid{
     display: grid;
@@ -99,12 +101,6 @@ header{
     padding-inline: 5px;
 }
 
-.placeList{
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: stretch;
-}
-
 .place{
     padding: 25px;
     background-color: green;
@@ -113,12 +109,10 @@ header{
 }
 
 .profile{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    justify-content: center;
+    position: fixed;
+    height: 5%;
+    width: 100%;
     text-align: center;
-    margin-top: 200px;
     font-size: x-large;
 }
 
@@ -132,6 +126,12 @@ header{
     text-align: center;
 }
 
+.info{
+    text-align: center;
+    font-style: inherit;
+    font-size: x-large;
+    margin: 10%;
+}
 
 .locateMe{
     position: absolute;
