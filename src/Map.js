@@ -21,7 +21,7 @@ const options = {
     disableDefaultUI: true,
 }
 
-function Map(props) {
+function Map({switchView, markers, setMarkers}) {
 
     const {isLoaded, loadError} = useLoadScript({googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY, libraries,});
     const [selected, setSelected] = useState(null);
@@ -37,14 +37,6 @@ function Map(props) {
         mapRef.current.panTo({lat, lng});
         mapRef.current.setZoom(20);
     }, []);
-
-    //TODO: Add all places and descriptions for them
-    const [markers, setMarkers] = useState([
-        {lat: 65.012804, lng: 25.466924, name: "Kauppuri 5", description:"expample description", openingHours: "10:00-12:00", isVisited: false},
-        {lat: 65.010717, lng: 25.469784, name: "45 Special", description:"expample description", openingHours: "10:00-12:00", isVisited: false},
-        {lat: 65.013280, lng: 25.464708, name: "Toripoliisi", description:"expample description", openingHours: "10:00-12:00", isVisited: false},
-    ]);
-
 
     if (loadError) return "Error loading maps";
     if (!isLoaded) return "Loading maps"
@@ -105,9 +97,9 @@ function Map(props) {
 
             <div className="footer">
                 <div className="footerGrid">
-                    <button onClick={()=> props.switchView("Places")}   className="footerButton">Paikat</button>
-                    <button onClick={()=> props.switchView("Map")}   className="footerButton">Kartta</button>
-                    <button onClick={()=> props.switchView("Profile")}   className="footerButton">Profiili</button>
+                    <button onClick={()=> switchView("Places")}   className="footerButton">Paikat</button>
+                    <button onClick={()=> switchView("Map")}   className="footerButton">Kartta</button>
+                    <button onClick={()=> switchView("Profile")}   className="footerButton">Profiili</button>
                 </div>
             </div>
         </div>
