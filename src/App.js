@@ -19,7 +19,6 @@ function App() {
 
     function switchView (View_var){
         setView(View_var);
-        console.log(view);
     }
 
 
