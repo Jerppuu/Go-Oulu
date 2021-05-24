@@ -38,7 +38,7 @@ function Places({switchView ,markers}) {
             </div>
             <div className="info">
                 <div style={{margin: "20px"}}>Vieraile paikoissa avataksesi ne</div>
-                <div>Paikka avautuu, kun paikannat itsesi kartta osiossa ollessasi tarkpeeksi lähellä kohdetta.</div>
+                <div>Paikka avautuu, kun paikannat itsesi kartta osiossa ollessasi tarpeeksi lähellä kohdetta.</div>
             </div>
 
             <div className="footer">
