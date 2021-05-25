@@ -24,7 +24,7 @@ function Profile({switchView, markers}) {
                 <h3 style={{paddingTop: "10px"}}>Testi Käyttäjä</h3>
                 <h3>Paikkoja käyty: {UserPercentage()}%</h3>
 
-                <button style={{margin: 150}} onClick={()=>window.location.reload()} className="button">Kirjaudu ulos</button>
+                <button style={{marginTop: 150, marginLeft: "auto", marginRight: "auto", width: "55%"}} onClick={()=>window.location.reload()} className="button">Kirjaudu ulos</button>
             </div>
 
 

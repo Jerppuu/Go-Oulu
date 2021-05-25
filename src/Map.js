@@ -50,7 +50,7 @@ function Map({switchView, markers, setMarkers}) {
 
             <Locate panTo={panTo} userLocation={userLocation} setUserLocation={setUserLocation} markers={markers} setMarkers={setMarkers}/>
 
-            <GoogleMap
+            <GoogleMap mapContainerClassName="map"
                 mapContainerStyle={mapContainerStyle}
                 zoom={15} center={center} options={options}
                 onLoad={onMapLoad}
@@ -93,7 +93,6 @@ function Map({switchView, markers, setMarkers}) {
                     </InfoWindow>) : null}
 
                     </GoogleMap>
-
 
             <div className="footer">
                 <div className="footerGrid">

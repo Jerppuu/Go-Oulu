@@ -1,26 +1,22 @@
 import React from 'react';
+import Logo from "./extras/logo.PNG";
 
 function Register(props) {
     return (
         <div>
-            <div className="loginRegisterGrid">
-                <header>
-                    Go@Oulu
-                </header>
+            <img src={Logo} alt="Logo" className="logo"/>
 
-                <div className="loginInput">
-                    <input type="text" name="username" placeholder="Käyttäjätunnus"/>
-                    <input type="text" name="Password" placeholder="Salasana"/>
-                </div>
-
-                <div className="loginRegisterButtons">
-                    <button className="button" disabled={true} >Rekisteröidy</button>
-                    <button onClick={()=> props.switchView("Start")}  className="button">Takaisin</button>
-
-
-                </div>
-
+            <div className="loginRegisterInput">
+                <input type="text" name="username" placeholder="Käyttäjätunnus"/>
+                <input type="text" name="Password" placeholder="Salasana"  style={{marginTop: "15px"}}/>
             </div>
+
+            <div className="loginRegisterButtons">
+                <button className="button" disabled={true} >Rekisteröidy</button>
+                <button onClick={()=> props.switchView("Start")}  className="button">Takaisin</button>
+            </div>
+
+
 
         </div>
     );

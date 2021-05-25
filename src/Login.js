@@ -1,23 +1,22 @@
 import React from 'react';
+import Logo from "./extras/logo.PNG";
 
 function Login(props) {
     return (
-        <div className="loginRegisterGrid">
-            <header>
-                Go@Oulu
-            </header>
+        <div>
+            <img src={Logo} alt="Logo" className="logo"/>
 
-            <div className="loginInput">
+            <div className="loginRegisterInput">
                 <input type="text" name="username" placeholder="Käyttäjätunnus"/>
-                <input type="text" name="Password" placeholder="Salasana"/>
+                <input type="text" name="Password" placeholder="Salasana" style={{marginTop: "15px"}}/>
             </div>
 
             <div className="loginRegisterButtons">
-                <button className="button" disabled={true}>Kirjaudu</button>
+                <button className="button" disabled={true} >Kirjaudu</button>
                 <button onClick={()=> props.switchView("Start")}  className="button">Takaisin</button>
-
-
             </div>
+
+
 
         </div>
     );
