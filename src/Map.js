@@ -13,8 +13,8 @@ const mapContainerStyle = {
     height: "100vh"
 };
 const center = {
-    lat: 65.012093,
-    lng: 25.465076,
+    lat: 65.025816,
+    lng: 25.470339,
 };
 const options = {
     styles: mapStyles,
@@ -52,7 +52,7 @@ function Map({switchView, markers, setMarkers}) {
 
             <GoogleMap mapContainerClassName="map"
                 mapContainerStyle={mapContainerStyle}
-                zoom={15} center={center} options={options}
+                zoom={12} center={center} options={options}
                 onLoad={onMapLoad}
             >
 
