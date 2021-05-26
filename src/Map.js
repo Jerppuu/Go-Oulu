@@ -89,6 +89,7 @@ function Map({switchView, markers, setMarkers}) {
                             <h2>{selected.name}</h2>
                             <h4>Avoinna: {selected.openingHours}</h4>
                             <p>{selected.description}</p>
+                            <img src={selected.picture} alt={selected.name}/>
                         </div>
                     </InfoWindow>) : null}
 

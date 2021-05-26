@@ -1,5 +1,5 @@
 import React from 'react';
-import user from './extras/user.png'
+import user from './Icons/user.png'
 
 function Profile({switchView, markers}) {
 
