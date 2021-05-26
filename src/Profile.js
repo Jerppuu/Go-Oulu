@@ -22,7 +22,7 @@ function Profile({switchView, markers}) {
                 <h2 style={{paddingBottom: "10px"}}>Profiili</h2>
                 <img src={user} alt="userpic" style={{borderRadius: "10", maxHeight: "150px"}}/>
                 <h3 style={{paddingTop: "10px"}}>Testi Käyttäjä</h3>
-                <h3>Paikkoja käyty: {UserPercentage()}%</h3>
+                <h3>Paikkoja käyty: {UserPercentage().toFixed(0)}%</h3>
 
                 <button style={{marginTop: 150, marginLeft: "auto", marginRight: "auto", width: "55%"}} onClick={()=>window.location.reload()} className="button">Kirjaudu ulos</button>
             </div>

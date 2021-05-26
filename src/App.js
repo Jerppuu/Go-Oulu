@@ -6,7 +6,7 @@ import Map from "./Map";
 import Places from "./Places";
 import Profile from "./Profile";
 
-import fourtyFiveSpecialPic from "./PlacePictures/fourtyFiveSpecialPic.png"
+import fortyFiveSpecialPic from "./PlacePictures/fourtyFiveSpecialPic.png"
 import ainolanPuistoPic from "./PlacePictures/ainolanPuistoPic.png"
 import kauppuri5Pic from "./PlacePictures/kauppuri5Pic.png"
 import liikuntaHalliPic from "./PlacePictures/liikuntaHalliPic.png"
@@ -31,7 +31,7 @@ function App() {
             description:"45sessa tulevat vastakohdatkin toimeen keskenään, eikä ihmisten sosiaalisella statuksella tai titteleillä ole mitään merkitystä. Tarjolla livemusiikkia, purtavaa ja hyvää menoa. K-18.",
             openingHours: "pe-la 15:00-01:00 (Kööki auki pe 16-22:30 / la 15-22:30)",
             isVisited: false,
-            picture: fourtyFiveSpecialPic},
+            picture: fortyFiveSpecialPic},
 
         {lat: 65.013280, lng: 25.464708,
             name: "Toripoliisi",
@@ -65,7 +65,6 @@ function App() {
     function switchView (View_var){
         setView(View_var);
     }
-
 
     return (
         <div>

@@ -83,10 +83,10 @@ function Map({switchView, markers, setMarkers}) {
                     }}
                 />
 
-                    //Todo: add more information about places
                     {selected ? (<InfoWindow position={{lat: selected.lat, lng: selected.lng}} onCloseClick={() => {setSelected(null)}}>
                         <div>
-                            <h2>{selected.name}</h2>
+                            <a href="#" className="close"  onClick={() => {setSelected(null)}}/>
+                            <h2 style={{width: "85%"}}>{selected.name}</h2>
                             <h4>Avoinna: {selected.openingHours}</h4>
                             <p>{selected.description}</p>
                             <img src={selected.picture} alt={selected.name}/>
@@ -117,9 +117,9 @@ function Locate({panTo, setUserLocation, markers, setMarkers}){
                         lng: position.coords.longitude,
                     });
 
-                    var markerTable = markers;
+                    let markerTable = markers;
                     //TODO : Improve accuracy of the place and user comparison
-                    for (var i=0; i < markers.length; i++){
+                    for (let i=0; i < markers.length; i++){
                         if (position.coords.latitude.toFixed(3) === markerTable[i].lat.toFixed(3) && position.coords.longitude.toFixed(3) === markerTable[i].lng.toFixed(3)){
                             markerTable[i].isVisited = true;
                         }
